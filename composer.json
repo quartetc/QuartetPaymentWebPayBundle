@@ -1,0 +1,14 @@
+{
+    "name": "quartet/payment-web-pay-bundle",
+    "authors": [
+        {
+            "name": "Shota Hoshino",
+            "email": "lga0503@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.0",
+        "jms/payment-core-bundle": "~1.1",
+        "quartet/webpay-bundle": "dev-master"
+    }
+}
