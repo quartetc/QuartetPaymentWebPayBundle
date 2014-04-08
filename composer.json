@@ -1,5 +1,5 @@
 {
-    "name": "quartet/payment-web-pay-bundle",
+    "name": "quartet/payment-webpay-bundle",
     "authors": [
         {
             "name": "Shota Hoshino",
@@ -11,5 +11,11 @@
         "symfony/form": "~2.0",
         "jms/payment-core-bundle": "~1.1",
         "quartet/webpay-bundle": "dev-master"
-    }
+    },
+    "autoload": {
+        "psr-0": {
+            "Quartet\\Payment\\WebPayBundle": ""
+        }
+    },
+    "target-dir": "Quartet/Payment/WebPayBundle"
 }
