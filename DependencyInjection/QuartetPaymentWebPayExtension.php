@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Quartet\Payment\WebPayBundle\DependencyInjection;
-
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -21,5 +19,13 @@ class QuartetPaymentWebPayExtension extends Extension
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getAlias()
+    {
+        return 'quartet_payment_webpay';
     }
 }
