@@ -45,11 +45,12 @@ class WebPayController extends Controller
      *
      * @return PaymentInstruction
      */
-    protected function createPaymentInstruction($amount, $currency, $method = 'quartet_payment_webpay', array $extendedData = null)
+    protected function createPaymentInstruction($amount, $currency, $method = 'quartet_payment_webpay', array $extendedDataArray = null)
     {
-        if (!empty($extendedData)) {
+        $extendedData = null;
+        if (!empty($extendedDataArray)) {
             $extendedData = new ExtendedData();
-            foreach ($extendedData as $k => $v) {
+            foreach ($extendedDataArray as $k => $v) {
                 $extendedData->set($k, $v);
             }
         }
