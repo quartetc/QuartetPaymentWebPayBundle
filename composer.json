@@ -13,9 +13,8 @@
         "quartet/webpay-bundle": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Quartet\\Payment\\WebPayBundle": ""
+        "psr-4": {
+            "Quartet\\Payment\\WebPayBundle\\": ""
         }
-    },
-    "target-dir": "Quartet/Payment/WebPayBundle"
+    }
 }
