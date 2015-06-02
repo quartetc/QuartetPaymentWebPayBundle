@@ -10,7 +10,7 @@
         "symfony/framework-bundle": "~2.0",
         "symfony/form": "~2.0",
         "jms/payment-core-bundle": "~1.1",
-        "quartet/webpay-bundle": "dev-master"
+        "quartet/webpay-bundle": "~1.0"
     },
     "autoload": {
         "psr-4": {
