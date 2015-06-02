@@ -16,5 +16,10 @@
         "psr-4": {
             "Quartet\\Payment\\WebPayBundle\\": ""
         }
+    },
+    "extra": {
+        "branch-alias": {
+           "dev-master": "1.0.x-dev"
+        }
     }
 }
