@@ -2,12 +2,12 @@ services:
   quartet_payment_webpay.plugin.webpay:
     class: Quartet\Payment\WebPayBundle\Plugin\WebPayPlugin
     arguments:
-      - @quartet_webpay.charges
+      - "@quartet_webpay.charges"
     tags:
       - { name: payment.plugin }
 
   quartet_payment_webpay.form_type.credit_card:
     class: Quartet\Payment\WebPayBundle\Form\Type\WebPayType
     tags:
-      - { name: form.type, alias: quartet_payment_webpay }
+      - { name: form.type }
       - { name: payment.method_form_type }
