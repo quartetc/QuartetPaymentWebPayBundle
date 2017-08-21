@@ -2,7 +2,7 @@ services:
   quartet_payment_webpay.plugin.webpay:
     class: Quartet\Payment\WebPayBundle\Plugin\WebPayPlugin
     arguments:
-      - @quartet_webpay.charges
+      - "@quartet_webpay.charges"
     tags:
       - { name: payment.plugin }
 
