@@ -72,7 +72,7 @@ class WebPayPluginTest extends \PHPUnit_Framework_TestCase
      */
     public function testApproveAndDeposit()
     {
-        $transaction = $this->getMock('JMS\Payment\CoreBundle\Model\FinancialTransactionInterface');
+        $transaction = $this->createMock('JMS\Payment\CoreBundle\Model\FinancialTransactionInterface');
 
         $transaction
             ->expects($this->once())
@@ -82,7 +82,7 @@ class WebPayPluginTest extends \PHPUnit_Framework_TestCase
         $transaction
             ->expects($this->once())
             ->method('getPayment')
-            ->will($this->returnValue($payment = $this->getMock('JMS\Payment\CoreBundle\Model\PaymentInterface')));
+            ->will($this->returnValue($payment = $this->createMock('JMS\Payment\CoreBundle\Model\PaymentInterface')));
 
         $transaction
             ->expects($this->once())
@@ -168,7 +168,7 @@ class WebPayPluginTest extends \PHPUnit_Framework_TestCase
      */
     private function getPaymentInstruction()
     {
-        return $this->getMock('JMS\Payment\CoreBundle\Model\PaymentInstructionInterface');
+        return $this->createMock('JMS\Payment\CoreBundle\Model\PaymentInstructionInterface');
     }
 
     /**
@@ -176,6 +176,6 @@ class WebPayPluginTest extends \PHPUnit_Framework_TestCase
      */
     private function getExtendedData()
     {
-        return $this->getMock('JMS\Payment\CoreBundle\Model\ExtendedDataInterface');
+        return $this->createMock('JMS\Payment\CoreBundle\Model\ExtendedDataInterface');
     }
 }
